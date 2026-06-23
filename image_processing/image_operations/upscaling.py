@@ -81,7 +81,7 @@ def run_upscale_from_user_input(img_path):
 
 if __name__ == "__main__":
     # NOTE: Set the correct path to your test image here.
-    IMAGE_PATH = "output_image/upscaled_image.png" 
+    IMAGE_PATH = "output_image/resized_image.png" 
     
     # This line now runs the function which contains the input() prompt.
     run_upscale_from_user_input(IMAGE_PATH)
