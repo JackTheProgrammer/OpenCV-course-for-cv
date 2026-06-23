@@ -11,3 +11,4 @@ thumbs.db
 /image_processing/image_operations/__pycache__
 /image_processing/__pycache__
 /image_processing/image_operations/contours_and_shape_detection/__pycache__
+/models
