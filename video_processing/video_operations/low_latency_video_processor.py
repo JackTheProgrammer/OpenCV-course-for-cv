@@ -17,7 +17,7 @@ class LowLatencyVideoProcessor:
         """Thread 1: Read frames from camera at maximum speed with zero blocking"""
         cap = cv2.VideoCapture(self.stream_source)
         if not cap.isOpened():
-            print("[Error] Camera stream open nahi ho saki.")
+            print("[Error] Camera stream not opened!")
             self.running = False
             return
 
@@ -66,7 +66,7 @@ class LowLatencyVideoProcessor:
                                 cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 0), 2)
 
                 # Step 3: Show the optimized frame
-                cv2.imshow("Veevo Tech Assessment - Live Stream", resized_frame)
+                cv2.imshow("Video inference low latency processing", resized_frame)
 
             # Break loop on 'q' key press
             if cv2.waitKey(1) & 0xFF == ord('q'):
